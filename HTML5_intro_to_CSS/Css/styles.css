@@ -1,42 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #66412b;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cae794;
+    color: #4d314e;
 }
 
-#container {
-    background-color: rgba(112, 177, 112, 0.616);
-    width: 1200px;
-    margin: 20px auto;
-    border: 2px solid black;
-    border-radius: 75px;
-    border-style: groove;
-    padding: 20px;
+header {
+    background-color: #a8c2dd;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    width: 80%; 
-    max-width: 1000px;
-    height: auto; 
+header h1 {
+    font-size: 2.5rem;
 }
 
 nav {
+    background-color: #34495E;
+    padding: 10px 0;
     text-align: center;
-    margin: 20px 0;
 }
 
-nav a {
-    font-size: 24px;
-    color: black;
-    margin: 0 20px;
-    font-weight: bold;
+nav ul {
+    list-style: none;
 }
 
-nav a:hover {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #ffcc00; 
+    font-size: 1.1rem;
 }
 
-h1, h2, h3 {
-    text-align: center;
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
 }
+
+section {
+    width: 70%;
+}
+
+aside {
+    width: 25%;
+    background-color: #BDC3C7;
+    padding: 15px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+#related-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+#related-info p {
+    margin-bottom: 15px;
+}
+
+/* Images: Make them responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Layout and Container ID Styling */
+#content {
+    padding-right: 20px;
+}
+
+#related-info {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
