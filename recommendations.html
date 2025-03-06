@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Styles/images/musicnote.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendations</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Music Recommendations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bands.html">Favorite Bands</a></li>
+                <li><a href="songs.html">Top Songs</a></li>
+                <li><a href="albums.html">Top Albums</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Share Your Music Recommendations!</h2>
+        <p>Love music as much as I do? Feel free to share your favorite albums, songs, or artists with me. I’m always looking for new recommendations!</p>
+        
+        <form id="recommendationForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email (optional):</label>
+            <input type="email" id="email" name="email">
+
+            <label for="recommendation">Your Music Recommendation:</label>
+            <textarea id="recommendation" name="recommendation" rows="4" required></textarea>
+
+            <button type="submit">Submit Recommendation</button>
+        </form>
+
+        <div id="responseMessage"></div> <!-- To show success/failure message -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Favorite Bands & Songs </p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+   
+
+    
+</body>
+</html>
